@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Configuración general -->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Red Rose' rel='stylesheet'>
+        <title>Tiempo CDT - <?php echo date("d/m") ?></title>
+    </head>
+    <body>  
+        <!-- Cabecera con la fecha actual con PHP -->
+        <div class="header">Tiempo en el CDT de Motril - 19/10</div>
+
+        <!-- Div con los datos del día de hoy -->
+        <div class="current">
+            <table class="currentTable">
+                <tr>
+                    <td>
+                        <div>
+                            <img class="currentIcon" src=".res/soleado.png">
+                            
+                            <p class="currentTemp">
+                                20ºC
+                                <br>
+                                15ºC - 22ºC
+                            </p>
+                        </div>      
+                        <p class="currentState">Soleado</p>
+                        <br>
+                    </td> 
+                    <td>
+                        <ul>
+                            <li>Probabilidad de lluvia: 20%</li>
+                            <li>Humedad: 70%</li>
+                            <li>Respecto al año pasado: +2ºC</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Div con las temperaturas del día actual -->
+        <!--
+        Con las nociones basicas en web que tengo hasta ahora no sé cómo podría poner la flecha del boceto
+        y asignarle una animacion para recorra la tabla y muestre los demás tramos horarios. Supongo que
+        será con JavaScript pero no sé cómo hacerlo. Igualmente los campos ya existen en la base de datos
+        asi que solo faltaría añadirle esta funcionalidad.
+
+        Tambien se me ocurre reducir los tramos horarios para no necesitar la flecha que puse en el boceto.
+        -->
+        <div class="current">
+            <table class="weeklyTable">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th class="tableHeader">Pronostico por horas</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <p class="weeklyTime">00:00</p>
+                        <img class="weeklyIcon" src="./res/nublado.png">
+
+                        <p class="weeklyTime">15ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">02:00</p>
+                        <img class="weeklyIcon" src="./res/nublado.png">
+
+                        <p class="weeklyTime">16ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">04:00</p>
+                        <img class="weeklyIcon" src="./res/nublado.png">
+
+                        <p class="weeklyTime">17ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">06:00</p>
+                        <img class="weeklyIcon" src="./res/nublado.png">
+
+                        <p class="weeklyTime">18ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">08:00</p>
+                        <img class="weeklyIcon" src="./res/nublado.png">
+
+                        <p class="weeklyTime">19ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">10:00</p>
+                        <img class="weeklyIcon" src="./res/nublado.png">
+
+                        <p class="weeklyTime">20ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">12:00</p>
+                        <img class="weeklyIcon" src="./res/nublado.png">
+
+                        <p class="weeklyTime">21ºC</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="current">
+            <table class="weeklyTable">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th class="tableHeader">Pronostico semanal</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="weeklyTime">Hoy</p>
+                        <img class="weeklyIcon" src="res/nublado.png">
+                        <p class="weeklyTime">22ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">Mañana</p>
+                        <img class="weeklyIcon" src="res/nublado.png">
+                        <p class="weeklyTime">21ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">Miercoles</p>
+                        <img class="weeklyIcon" src="res/lluvia.png">
+                        <p class="weeklyTime">20º</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">Jueves</p>
+                        <img class="weeklyIcon" src="res/nublado.png">
+                        <p class="weeklyTime">21ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">Viernes</p>
+                        <img class="weeklyIcon" src="res/soleado.png">
+                        <p class="weeklyTime">22ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">Sabado</p>
+                        <img class="weeklyIcon" src="res/soleado.png">
+                        <p class="weeklyTime">23ºC</p>
+                    </td>
+                    <td>
+                        <p class="weeklyTime">Domingo</p>
+                        <img class="weeklyIcon" src="res/lluvia.png">
+                        <p class="weeklyTime">24ºC</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
